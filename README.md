@@ -7,4 +7,5 @@ A simple bot for the JPS built in .NET with BotFramework to consult the results 
 - This is not an official JPS (Junta de Protección Social) bot and it is just for testing and fun :)
 
 | <div height="600" width="300">![Alt text](./readme/images/image1.png)</div> |
+| --------------------------------------------------------------------------- |
 | <div height="600" width="300">![Alt text](./readme/images/image2.png)</div> |
