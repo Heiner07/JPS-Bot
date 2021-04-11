@@ -1,0 +1,22 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "body": [
+    {
+      "type": "TextBlock",
+      "size": "large",
+      "weight": "bolder",
+      "text": "${title}"
+    },
+    {
+      "type": "FactSet",
+      "facts": [
+        {
+          "title": "Has ganado:",
+          "value": "${amountEarned}"
+        }
+      ]
+    }
+  ],
+  "type": "AdaptiveCard",
+  "version": "1.3"
+}

@@ -1,0 +1,37 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "body": [
+    {
+      "type": "TextBlock",
+      "size": "medium",
+      "weight": "bolder",
+      "text": "${title}"
+    },
+    {
+      "type": "Image",
+      "url": "https://www.jps.go.cr/sites/all/themes/jps/images/logo_loteria.jpg",
+      "spacing": "None",
+      "horizontalAlignment": "Center",
+      "size": "Large"
+    },
+    {
+      "type": "FactSet",
+      "facts": [
+        {
+          "title": "Sorteo:",
+          "value": "${lotteryNumber}"
+        },
+        {
+          "title": "${labelNumber}",
+          "value": "${number}"
+        },
+        {
+          "title": "Serie:",
+          "value": "${serie}"
+        }
+      ]
+    }
+  ],
+  "type": "AdaptiveCard",
+  "version": "1.3"
+}

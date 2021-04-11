@@ -49,6 +49,7 @@ namespace JPS_Bot.Bots
 
         protected override async Task OnMessageActivityAsync(ITurnContext<IMessageActivity> turnContext, CancellationToken cancellationToken)
         {
+            turnContext.Activity.Locale = "es-es";
             // Run the Dialog with the new message Activity.
             await _dialog.RunAsync(
                 turnContext: turnContext,

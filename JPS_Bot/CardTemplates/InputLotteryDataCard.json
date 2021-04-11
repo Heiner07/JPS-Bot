@@ -1,0 +1,72 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.3",
+  "body": [
+    {
+      "type": "ColumnSet",
+      "columns": [
+        {
+          "type": "Column",
+          "width": 2,
+          "items": [
+            {
+              "type": "TextBlock",
+              "text": "${title}",
+              "weight": "bolder",
+              "size": "medium",
+              "wrap": true
+            },
+            {
+              "type": "Input.Number",
+              "id": "fractionNumber",
+              "min": 0,
+              "max": 99,
+              "value": 0,
+              "isRequired": true,
+              "label": "${fractionNumberMsg}",
+              "errorMessage": "El campo es requerido"
+            },
+            {
+              "type": "Input.Number",
+              "id": "fractionSerie",
+              "label": "${fractionSerieMsg}",
+              "value": 0,
+              "min": 0,
+              "max": 999,
+              "errorMessage": "El campo es requerido",
+              "isRequired": true
+            },
+            {
+              "type": "Input.Number",
+              "id": "lotteryNumber",
+              "label": "${lotteryNumberMsg}",
+              "value": 0,
+              "min": 0,
+              "errorMessage": "El campo es requerido",
+              "isRequired": true
+            }
+          ]
+        },
+        {
+          "type": "Column",
+          "width": 1,
+          "items": [
+            {
+              "type": "Image",
+              "url": "${$root.imageUrl}",
+              "size": "auto"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Submit",
+      "title": "Consultar",
+      "style": "positive"
+    }
+  ]
+}

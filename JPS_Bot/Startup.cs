@@ -44,6 +44,10 @@ namespace JPS_Bot
 
             services.AddSingleton<IJPSService, JPSService>();
 
+            services.AddSingleton<ConsultLotteryMsgDialog>();
+
+            services.AddSingleton<ConsultLotteryCardsDialog>();
+
             // The MainDialog that will be run by the bot
             services.AddSingleton<MainDialog>();
 
